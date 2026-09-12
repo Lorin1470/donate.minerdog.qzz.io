@@ -86,8 +86,15 @@ try {
   await send("Runtime.enable");
   await send("DOM.enable");
 
-  // Wait for initial render
-  await new Promise(r => setTimeout(r, 3000));
+  // Wait for initial render (up to 8s)
+  for (let i = 0; i < 16; i++) {
+    const check = await send("Runtime.evaluate", {
+      expression: "document.querySelectorAll('button').length > 0",
+      returnByValue: true
+    });
+    if (check.result && check.result.value) break;
+    await new Promise(r => setTimeout(r, 500));
+  }
 
   // 3. Evaluate page state
   console.log("\n[3/6] Inspecting Mainnet status & UI elements...");
