@@ -5,12 +5,12 @@ export function Header() {
   return (
     <header className="w-full border-b border-border-subtle bg-bg-primary/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-3xl items-center justify-between px-4 sm:px-6">
-        {/* Brand linking to GitHub repository */}
+        {/* Brand linking to MinerDog main portal */}
         <a
-          href="https://github.com/Lorin1470/donate.minerdog.qzz.io"
+          href="https://minerdog.qzz.io"
           target="_blank"
           rel="noopener noreferrer"
-          title="查看 GitHub 倉庫源碼"
+          title="前往 minerdog.qzz.io 主站"
           className="group flex items-center gap-2.5 text-text-primary no-underline transition-opacity hover:opacity-90"
         >
           <img
@@ -18,14 +18,9 @@ export function Header() {
             alt="MinerDog Logo"
             className="h-8 w-8 rounded-full border border-white/20 object-cover shadow-[0_0_12px_rgba(0,240,255,0.35)] transition-transform duration-300 group-hover:scale-110"
           />
-          <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2">
-            <span className="text-base font-bold tracking-tight text-white transition-colors group-hover:text-solana-green">
-              minerdog.qzz.io
-            </span>
-            <span className="rounded-md bg-white/10 px-1.5 py-0.5 text-[10px] font-medium text-text-secondary">
-              GitHub 源碼 ↗
-            </span>
-          </div>
+          <span className="text-base font-bold tracking-tight text-white transition-colors group-hover:text-solana-green">
+            minerdog.qzz.io
+          </span>
         </a>
 
         {/* Nav */}
