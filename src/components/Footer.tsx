@@ -48,14 +48,22 @@ export function Footer() {
         </div>
 
         {/* Links */}
-        <div className="flex gap-6 text-xs text-text-tertiary">
+        <div className="flex flex-wrap justify-center gap-5 sm:gap-6 text-xs text-text-tertiary">
           <a
             href="https://minerdog.qzz.io"
             target="_blank"
             rel="noopener noreferrer"
             className="text-text-tertiary no-underline transition-colors hover:text-text-primary"
           >
-            MinerDog
+            MinerDog 主站
+          </a>
+          <a
+            href="https://github.com/Lorin1470/donate.minerdog.qzz.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-text-tertiary no-underline transition-colors hover:text-text-primary"
+          >
+            GitHub 源碼
           </a>
           <a
             href="https://solana.com"

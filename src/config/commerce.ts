@@ -55,6 +55,7 @@ export function getCommerceConfig() {
     merchant: {
       name: "MinerDog",
       wallet,
+      logo: "/logo.jpg",
     },
     mode: "tip" as const,
     network: SOLANA_NETWORK,

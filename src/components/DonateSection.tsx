@@ -75,9 +75,13 @@ export function DonateSection() {
       <div className="donate-glow w-full max-w-lg">
         {/* Content card */}
         <div className="relative z-10 rounded-2xl border border-border-subtle bg-bg-card/80 p-8 text-center backdrop-blur-sm sm:p-10">
-          {/* Icon */}
-          <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-solana-purple/20 to-solana-green/20 text-4xl">
-            💜
+          {/* MinerDog Avatar */}
+          <div className="mx-auto mb-6 flex justify-center">
+            <img
+              src="/logo.jpg"
+              alt="MinerDog Logo"
+              className="h-20 w-20 rounded-full border-2 border-white/20 object-cover shadow-[0_0_24px_rgba(0,240,255,0.4)] transition-transform duration-500 hover:scale-105 hover:rotate-6"
+            />
           </div>
 
           {/* Heading */}
