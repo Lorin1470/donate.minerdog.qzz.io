@@ -1,7 +1,7 @@
 import { spawn } from "child_process";
 
 const TARGET_URL = process.argv[2] || "https://donate.minerdog.qzz.io";
-const DEBUG_PORT = 9333;
+const DEBUG_PORT = 9330 + Math.floor(Math.random() * 50);
 
 console.log("==================================================");
 console.log(" Solana Donate — Production Verification Harness");
