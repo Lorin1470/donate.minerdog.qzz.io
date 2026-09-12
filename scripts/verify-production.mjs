@@ -85,6 +85,7 @@ try {
   await send("Page.enable");
   await send("Runtime.enable");
   await send("DOM.enable");
+  await send("Page.navigate", { url: TARGET_URL });
 
   // Wait for initial render (up to 8s)
   for (let i = 0; i < 16; i++) {
