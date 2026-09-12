@@ -22,6 +22,9 @@ dist/
 .DS_Store
 Thumbs.db
 
+# Cloudflare
+.wrangler/
+
 # Security: NEVER commit these
 *.pem
 *.key
