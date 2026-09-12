@@ -35,10 +35,10 @@ export function ThankYouModal({ signature, onClose }: ThankYouModalProps) {
 
         {/* Message */}
         <h3 className="mb-2 text-xl font-bold text-text-primary">
-          Thank You! 🎉
+          感謝您的贊助支持！🎉
         </h3>
         <p className="mb-6 text-sm text-text-secondary">
-          Your donation has been confirmed on the Solana blockchain.
+          您的贊助款項已在 Solana 區塊鏈上確認完成。
         </p>
 
         {/* Transaction link */}
@@ -60,7 +60,7 @@ export function ThankYouModal({ signature, onClose }: ThankYouModalProps) {
             onClick={onClose}
             className="w-full cursor-pointer rounded-xl bg-gradient-to-r from-solana-purple to-solana-green px-6 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90 border-0"
           >
-            Done
+            完成
           </button>
         </div>
       </div>

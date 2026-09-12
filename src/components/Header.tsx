@@ -25,7 +25,7 @@ export function Header() {
             rel="noopener noreferrer"
             className="text-sm text-text-secondary transition-colors hover:text-text-primary no-underline"
           >
-            ← Back to MinerDog
+            ← 返回 MinerDog 主站
           </a>
         </nav>
       </div>

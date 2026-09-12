@@ -76,7 +76,7 @@ export function Footer() {
         </div>
 
         <p className="text-[11px] text-text-tertiary">
-          © {new Date().getFullYear()} MinerDog. All donations are on-chain and non-refundable.
+          © {new Date().getFullYear()} MinerDog。所有贊助均為區塊鏈上交易，無法退款。
         </p>
       </div>
     </footer>

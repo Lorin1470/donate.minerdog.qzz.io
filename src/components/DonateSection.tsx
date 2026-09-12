@@ -82,17 +82,17 @@ export function DonateSection() {
 
           {/* Heading */}
           <h1 className="mb-3 text-3xl font-bold tracking-tight sm:text-4xl">
-            <span className="solana-gradient-text">Support MinerDog</span>
+            <span className="solana-gradient-text">贊助 MinerDog</span>
           </h1>
 
           {/* Description */}
           <p className="mb-8 text-sm leading-relaxed text-text-secondary sm:text-base">
-            Your donation helps keep MinerDog running.
+            感謝您支持 MinerDog 的持續運作與開發。
             <br />
-            Choose your amount and pay with{" "}
-            <span className="font-medium text-text-primary">SOL</span>,{" "}
-            <span className="font-medium text-text-primary">USDC</span>, or{" "}
-            <span className="font-medium text-text-primary">USDT</span>.
+            您可以自由自訂贊助金額，並使用{" "}
+            <span className="font-medium text-text-primary">SOL</span>、{" "}
+            <span className="font-medium text-text-primary">USDC</span> 或{" "}
+            <span className="font-medium text-text-primary">USDT</span> 進行贊助。
           </p>
 
           {/* === Official Solana Commerce Kit PaymentButton === */}
@@ -111,10 +111,10 @@ export function DonateSection() {
             <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/10 p-5 text-left text-sm text-yellow-300">
               <div className="flex items-center gap-2 font-semibold text-yellow-400 mb-2">
                 <span>⚠️</span>
-                <span>Wallet address not configured</span>
+                <span>尚未設定收款錢包地址</span>
               </div>
               <p className="text-xs text-yellow-300/80 mb-3 leading-relaxed">
-                Please configure your Solana public key in <code className="rounded bg-yellow-500/20 px-1 py-0.5 text-[11px] text-yellow-200">.env</code>:
+                請在環境變數中設定您的 Solana 公開錢包地址：
               </p>
               <pre className="overflow-x-auto rounded-lg bg-black/40 p-2.5 font-mono text-xs text-yellow-200">
                 VITE_MERCHANT_WALLET=YourSolanaPublicKeyHere
@@ -125,9 +125,9 @@ export function DonateSection() {
           {/* Features */}
           <div className="mt-8 grid grid-cols-3 gap-4 border-t border-border-subtle pt-6">
             {[
-              { icon: "⚡", label: "Instant" },
-              { icon: "💸", label: "Low Fees" },
-              { icon: "🔒", label: "On-Chain" },
+              { icon: "⚡", label: "即時到帳" },
+              { icon: "💸", label: "極低手續費" },
+              { icon: "🔒", label: "鏈上透明" },
             ].map(({ icon, label }) => (
               <div key={label} className="text-center">
                 <div className="text-lg">{icon}</div>
