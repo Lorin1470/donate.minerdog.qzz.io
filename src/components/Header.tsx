@@ -5,20 +5,20 @@ export function Header() {
   return (
     <header className="w-full border-b border-border-subtle bg-bg-primary/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-3xl items-center justify-between px-4 sm:px-6">
-        {/* Brand linking to MinerDog main portal */}
+        {/* Brand linking to MinerDog main portal with neon color change animation */}
         <a
           href="https://minerdog.qzz.io"
           target="_blank"
           rel="noopener noreferrer"
           title="前往 minerdog.qzz.io 主站"
-          className="group flex items-center gap-2.5 text-text-primary no-underline transition-opacity hover:opacity-90"
+          className="logo-mark-minerdog flex items-center gap-2.5 text-text-primary no-underline"
         >
           <img
             src="/logo.jpg"
             alt="MinerDog Logo"
-            className="h-8 w-8 rounded-full border border-white/20 object-cover shadow-[0_0_12px_rgba(0,240,255,0.35)] transition-transform duration-300 group-hover:scale-110"
+            className="logo-img-minerdog h-8 w-8 rounded-full border border-white/20 object-cover shadow-[0_0_12px_rgba(0,240,255,0.45)]"
           />
-          <span className="text-base font-bold tracking-tight text-white transition-colors group-hover:text-solana-green">
+          <span className="animate-neon-minerdog text-base font-extrabold tracking-wider">
             minerdog.qzz.io
           </span>
         </a>
