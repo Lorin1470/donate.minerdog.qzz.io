@@ -24,7 +24,7 @@ export function Header() {
         </a>
 
         {/* Nav */}
-        <nav className="flex items-center gap-3 sm:gap-4">
+        <nav className="flex items-center">
           <a
             href="https://github.com/Lorin1470/donate.minerdog.qzz.io"
             target="_blank"
@@ -43,16 +43,7 @@ export function Header() {
                 clipRule="evenodd"
               />
             </svg>
-            <span className="hidden sm:inline">查看源碼</span>
-          </a>
-
-          <a
-            href="https://minerdog.qzz.io"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs text-text-secondary transition-colors hover:text-text-primary no-underline"
-          >
-            ← 返回主站
+            <span>查看源碼</span>
           </a>
         </nav>
       </div>
