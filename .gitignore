@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# Environment variables (contains sensitive data)
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Security: NEVER commit these
+*.pem
+*.key
+keypair.json
+id.json
+*.seed
+test-*.json
